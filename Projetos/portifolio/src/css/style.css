@@ -1,4 +1,4 @@
-/* Estilo geral */
+/* Estilo */
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +8,10 @@
 }
 
 body{
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(41, 40, 40);
     height: 100vh;
     transition: background-color 0.5s ease;
+    color: #b6b4b4;
 }
 
 .interface{
@@ -21,8 +22,9 @@ body{
 /* ESTILO CABEÇALHO */
 
 header{
-    padding: 10px 4%;
+    padding: 9px 4%;
     box-shadow: .5px .5px 10px .5px #000000;
+    position: relative;
 }
 
 header > .interface {
@@ -129,9 +131,9 @@ header .btn-contato button:hover{
     transform: rotateY(-180deg);
 }
 
-/* TEMA CLARO*/
+/* CABEÇALHO TEMA CLARO*/
 .white {
-    background-color: rgb(230, 221, 221);
+    background-color: rgb(207, 203, 203);
     color: black;
 }
 
@@ -154,6 +156,55 @@ header .btn-contato button:hover{
     transition: 0.5s;
 }
 
-/*  */
+
+/* CORPO WHITE */
+.white .hello-word {
+    color: black;
+}
+
+.img-topo-site img {
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    position: relative;
+    animation: flutuar 3s ease-out infinite alternate;
+}
+
+section .topo-do-site{
+padding: 40px 4%;
+}
+
+.flex{
+display: flex;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.txt-topo-site{
+    width: 480px;
+}
+
+.topo-do-site h1{
+    font-size: 35px;  
+}
+
+.topo-do-site p{
+    font-size: 22px;  
+}
 
 
+
+
+@keyframes flutuar{
+    0%{
+top: 0;
+    }
+    100%{
+top: 30px;
+    }
+}
