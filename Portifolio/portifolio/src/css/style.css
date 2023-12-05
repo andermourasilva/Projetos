@@ -1,0 +1,159 @@
+/* Estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 10px 4%;
+    box-shadow: .5px .5px 10px .5px #000000;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(171, 175, 175);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none; 
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 9px 40px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    font-weight: 650;
+    background-color: rgb(124, 34, 207);
+    cursor: pointer;
+    color: #ffff;
+    transition: 0.5s;
+}
+
+header .btn-contato button:hover{
+    background-color: rgb(97, 4, 185);
+    box-shadow: 0px 0px 8px;
+    transform: scale(1.05); 
+}
+
+.btn-contato{
+    padding-top: 25px;
+}
+
+.logo a img{
+    max-width:40px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+/* FLIP */
+.flip-modo {
+    padding-top: 17px;
+    width: 50px;
+    height: 50px;
+}
+
+.flip-modo:hover {
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
+.img-tamanho-modo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.flip-modo-inner {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-modo.active .flip-modo-inner {
+    transform: rotateY(-180deg);
+}
+
+.modo-escuro, .modo-claro {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-modo .modo-claro {
+    transform: rotateY(-180deg);
+}
+
+/* TEMA CLARO*/
+.white {
+    background-color: rgb(230, 221, 221);
+    color: black;
+}
+
+.white header {
+    background-color: rgb(43, 42, 43);
+    color: black;
+}
+
+.white header a {
+    color: rgb(252, 252, 252, 253);
+    transition: 0.5s;
+}
+
+.white header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.white header .btn-contato button {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/*  */
+
+
