@@ -66,3 +66,17 @@ setTimeout(() => {
   elSobreMim.innerHTML = "";
   digitacao(elSobreMim, sobreMim, interval);
 }, olaMundo.length * interval + 2000);
+
+// SCROLL TOP
+
+window.addEventListener("scroll", function () {
+  let scroll = this.document.querySelector(".scrollTop");
+  scroll.classList.toggle("active", window.scrollY > 450);
+});
+
+function backTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
