@@ -192,19 +192,19 @@ section .topo-do-site {
 section.topo-do-site .flex {
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 100px;
 }
 
 .txt-topo-site {
-  width: 480px;
+  width: 580px;
 }
 
 .topo-do-site h1 {
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .topo-do-site p {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 @keyframes flutuar {
@@ -246,6 +246,23 @@ section.topo-do-site .flex {
 
 .scrollTop img {
   width: 100%;
+}
+
+/* tecnologias */
+
+.especialidade h2 {
+  font-size: 50px;
+}
+
+.especialidade-box img {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.especialidade-box {
+  padding: 40px 4%;
 }
 
 /* Responsividade */
