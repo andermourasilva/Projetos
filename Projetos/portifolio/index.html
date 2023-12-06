@@ -4,43 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson de M. Silva</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    /> -->
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="src/js/main.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="interface">
-        <div class="logo">
-          <a href="#">
-            <img src="src/img/codigo.png" alt="Logo do Portifólio" />
-            <p>Anderson de M. Silva</p>
-          </a>
-        </div>
-        <nav class="menu-desktop">
-          <ul>
-            <li><a href="#">Sobre Mim</a></li>
-            <li><a href="#">Técnologias</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li>
-              <div id="modo" class="flip-modo" onclick="AlterarIconeEscuroClaro()">
-                <div class="flip-modo-inner">
-                  <div class="modo-escuro">
-                    <img class="img-tamanho-modo" src="src/img/escuro.png" alt="lua" />
-                  </div>
-                  <div class="modo-claro">
-                    <img class="img-tamanho-modo" src="src/img/claro.png" alt="sol" />
-                  </div>
+      <button class="btn_icon_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+          <path
+            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+          />
+          <path
+            d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+          />
+        </svg>
+      </button>
+
+      <div class="logo_header">
+        <img src="src/img/codigo.png" alt="" />
+        <p>Anderson de M. Silva</p>
+      </div>
+      <nav>
+        <ul>
+          <button class="btn_icon_header">
+            <!-- <img src="src/img/arrow-return-left.svg" alt="" /> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"
+              />
+            </svg>
+          </button>
+          <li href="#">Inicio</li>
+          <li href="#">Técnologias</li>
+          <li href="#">Formações</li>
+          <li href="#">Projetos</li>
+          <li href="#">
+            <div class="btn-contato">
+              <a href="#">
+                <button>Contato</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div id="modo" class="flip-modo" onclick="AlterarIconeEscuroClaro()">
+              <div class="flip-modo-inner">
+                <div class="modo-escuro">
+                  <img class="img-tamanho-modo" src="src/img/escuro.png" alt="lua" />
+                </div>
+                <div class="modo-claro">
+                  <img class="img-tamanho-modo" src="src/img/claro.png" alt="sol" />
                 </div>
               </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="btn-contato">
-          <a href="#">
-            <button>Contato</button>
-          </a>
-        </div>
-      </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -58,56 +83,6 @@
           </div>
         </div>
       </section>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
-      <p>teste</p>
     </main>
 
     <article>

@@ -11,7 +11,7 @@ body {
   background-color: rgb(100, 100, 104);
   height: 100vh;
   transition: background-color 0.5s ease;
-  color: #b6b4b4;
+  color: #d3d1d1;
 }
 
 .interface {
@@ -21,38 +21,37 @@ body {
 
 /* ESTILO CABEÇALHO */
 
-header {
-  background-color: rgb(40, 40, 41);
-  padding: 9px 4%;
-  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
-  position: relative;
-}
-
-header > .interface {
+header,
+nav ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  color: #b4b2b2;
+}
+
+header {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
+  height: 70px;
   justify-content: space-between;
-}
-
-header a {
-  color: rgb(171, 175, 175);
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.2s;
-}
-
-header a:hover {
-  color: aliceblue;
-  transform: scale(1.05);
+  padding: 0 10%;
 }
 
 header nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header ul li {
+  color: rgb(171, 175, 175);
   display: inline-block;
-  padding: 0px 40px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header ul li:hover {
+  color: aliceblue;
+  transform: scale(1.05);
 }
 
 header .btn-contato button {
@@ -63,7 +62,7 @@ header .btn-contato button {
   font-weight: 650;
   background-color: rgb(124, 34, 207);
   cursor: pointer;
-  color: #ffff;
+  color: rgb(171, 175, 175);
   transition: 0.5s;
 }
 
@@ -71,31 +70,32 @@ header .btn-contato button:hover {
   background-color: rgb(97, 4, 185);
   box-shadow: 0px 0px 8px;
   transform: scale(1.05);
+  color: white;
 }
 
-.btn-contato {
-  padding-top: 25px;
+nav ul {
+  gap: 100px;
 }
 
-.logo a img {
+.logo_header {
+  display: flex;
+  align-items: center;
+  color: rgb(171, 175, 175);
+  font-weight: bold;
+}
+
+.logo_header img {
   max-width: 40px;
   max-height: 40px;
-  width: auto;
+  width: 45px;
   height: auto;
   margin-right: 10px;
 }
 
-.logo a {
-  display: flex;
-  align-items: center;
-  padding-top: 35px;
-}
-
 /* FLIP */
 .flip-modo {
-  padding-top: 17px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .flip-modo:hover {
@@ -138,22 +138,27 @@ header .btn-contato button:hover {
   color: black;
 }
 
-/* .white .scrollTop {
-  background-color: rgb(121, 114, 114);
-} */
-
 .white header {
   background-color: rgb(43, 42, 43);
   color: black;
 }
 
-.white header a {
-  color: rgb(252, 252, 252, 253);
+.white header ul li {
+  color: #c4c2c2;
   transition: 0.5s;
 }
 
-.white header a:hover {
+.white header ul li:hover {
   color: rgb(255, 255, 255);
+}
+
+.white .logo_header {
+  display: flex;
+  align-items: center;
+  /* color: rgb(171, 175, 175); */
+  font-weight: bold;
+  color: #c4c2c2;
+  transition: 0.2s;
 }
 
 .white header .btn-contato button {
@@ -162,9 +167,6 @@ header .btn-contato button:hover {
 }
 
 /* CORPO WHITE */
-.white .hello-word {
-  color: black;
-}
 
 .img-topo-site img {
   max-width: 600px;
@@ -173,6 +175,10 @@ header .btn-contato button:hover {
   height: auto;
   position: relative;
   animation: flutuar 3s ease-out infinite alternate;
+}
+
+main {
+  transition: 1s;
 }
 
 section .topo-do-site {
@@ -210,6 +216,8 @@ section.topo-do-site .flex {
   }
 }
 
+/* Scroll */
+
 .scrollTop {
   outline: none;
   border: 0;
@@ -239,3 +247,28 @@ section.topo-do-site .flex {
 .scrollTop img {
   width: 100%;
 }
+
+/* Responsividade */
+
+.btn_icon_header {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: rgb(171, 175, 175);
+  transition: 0.2s;
+}
+
+.btn_icon_header:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* @media screen and (max-width: 768px) {
+  .btn_icon_header {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+  }
+} */
