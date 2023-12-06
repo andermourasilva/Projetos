@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(41, 40, 40);
+  background-color: rgb(100, 100, 104);
   height: 100vh;
   transition: background-color 0.5s ease;
   color: #b6b4b4;
@@ -22,6 +22,7 @@ body {
 /* ESTILO CABEÇALHO */
 
 header {
+  background-color: rgb(40, 40, 41);
   padding: 9px 4%;
   box-shadow: 0.5px 0.5px 10px 0.5px #000000;
   position: relative;
