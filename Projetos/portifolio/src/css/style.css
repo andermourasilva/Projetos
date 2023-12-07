@@ -34,7 +34,7 @@ header {
   box-shadow: 0.5px 0.5px 10px 0.5px #000000;
   height: 70px;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 9%;
 }
 
 header nav ul {
@@ -75,6 +75,7 @@ header .btn-contato button:hover {
 
 nav ul {
   gap: 100px;
+  cursor: pointer;
 }
 
 .logo_header {
@@ -94,13 +95,16 @@ nav ul {
 
 /* FLIP */
 .flip-modo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  transition: 0.2s;
 }
 
 .flip-modo:hover {
   transform: scale(1.08);
   transition: 0.2s;
+  box-shadow: 0.5px 0.5px 10px 0.5px #ffffff;
+  border-radius: 50%;
 }
 
 .img-tamanho-modo {
@@ -134,8 +138,7 @@ nav ul {
 
 /* CABEÇALHO TEMA CLARO*/
 .white {
-  background-color: rgb(207, 203, 203);
-  color: black;
+  background-color: #d3d1d1;
 }
 
 .white header {
@@ -191,12 +194,43 @@ section .topo-do-site {
 
 section.topo-do-site .flex {
   align-items: center;
+  gap: 10px;
+}
+
+.fundo-texto-topo {
+  background-color: rgb(68, 67, 68);
+  width: 700px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 19px;
+  align-items: center;
   justify-content: center;
-  gap: 100px;
+  color: rgb(211, 208, 208);
+  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.sobreMim {
+  padding-top: 10px;
+  width: 692px;
+}
+
+.fundo-texto-topo:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.white .fundo-texto-topo {
+  background-color: rgb(75, 74, 75);
+  color: rgb(211, 208, 208);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .txt-topo-site {
-  width: 580px;
+  width: 800px;
 }
 
 .topo-do-site h1 {
@@ -251,18 +285,56 @@ section.topo-do-site .flex {
 /* tecnologias */
 
 .especialidade h2 {
+  padding-top: 10px;
   font-size: 50px;
 }
 
-.especialidade-box img {
+.fundo-tecnologias img {
   max-width: 100px;
   max-height: 100px;
   width: auto;
   height: auto;
 }
 
-.especialidade-box {
-  padding: 40px 4%;
+.fundo-tecnologias {
+  /* padding: 10px 4%; */
+  width: auto;
+  height: 700px;
+  border-radius: 10px;
+  background-color: rgb(75, 74, 75);
+  align-items: center;
+  text-align: center;
+  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
+  transition: 0.2s;
+}
+
+.fundo-tecnologias:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.white .fundo-tecnologias {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: rgb(231, 226, 226);
+}
+
+.fundo-tecnologias ul {
+  padding-top: 50px;
+  display: inline-flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.fundo-tecnologias li {
+  width: 300px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.fundo-tecnologias li:hover {
+  opacity: 1;
+  transition: 0.3s;
+  transform: scale(1.05);
 }
 
 /* Responsividade */
@@ -278,6 +350,7 @@ section.topo-do-site .flex {
 .btn_icon_header:hover {
   color: #ffffff;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* @media screen and (max-width: 768px) {

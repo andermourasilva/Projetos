@@ -36,12 +36,15 @@ function rodarIcone() {
 
 // TEXTO QUE DIGITA SOZINHO
 
-const elOla = document.querySelector(".hello-word");
+const elOla = document.querySelector(".ola-Mundo");
 const elEuSou = document.querySelector(".euSou");
-const elSobreMim = document.querySelector(".Atualmente");
+const elAtualmente = document.querySelector(".Atualmente");
+const elSobreMim = document.querySelector(".sobreMim");
 const olaMundo = "Olá Mundo!";
-const sobreMim = "Atualmente um Desenvolvedor Estagiário";
-const euSou = "Sou Anderson de Moura Silva...";
+const euSou = "Anderson de Moura Silva...";
+const atualmente = "Desenvolvedor Full Stack.";
+const sobreMim =
+  "Sou uma mente inquisitiva e autodidata, sempre em busca de ampliar meu repertório para me aprimorar como profissional, seja nos espaços acadêmicos ou nos desafios do cotidiano.";
 const interval = 50;
 
 digitacao(elOla, olaMundo, interval);
@@ -58,14 +61,19 @@ function digitacao(el, text, interval) {
 }
 
 setTimeout(() => {
-  elSobreMim.innerHTML = "";
+  elAtualmente.innerHTML = "";
   digitacao(elEuSou, euSou, interval);
 }, olaMundo.length * interval + 200);
 
 setTimeout(() => {
-  elSobreMim.innerHTML = "";
-  digitacao(elSobreMim, sobreMim, interval);
+  elAtualmente.innerHTML = "";
+  digitacao(elAtualmente, atualmente, interval);
 }, olaMundo.length * interval + 2000);
+
+setTimeout(() => {
+  elSobreMim.innerHTML = "";
+  digitacao(elSobreMim, sobreMim, 40);
+}, olaMundo.length * interval + 4000);
 
 // SCROLL TOP
 
