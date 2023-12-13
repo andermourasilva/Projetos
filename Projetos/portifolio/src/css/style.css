@@ -19,10 +19,10 @@ body {
   margin: 0 auto;
 }
 
-.interface-paralela {
+/* .interface-paralela {
   max-width: 1280px;
   margin: 0 auto;
-}
+} */
 
 /* ESTILO CABEÇALHO */
 
@@ -108,7 +108,6 @@ nav ul {
 .flip-modo:hover {
   transform: scale(1.08);
   transition: 0.2s;
-  box-shadow: 0.5px 0.5px 10px 0.5px #ffffff;
   border-radius: 50%;
 }
 
@@ -217,10 +216,10 @@ section.topo-do-site .flex {
   transition: 0.2s;
 }
 
-.sobreMim {
+/* .sobreMim {
   padding-top: 10px;
   width: 692px;
-}
+} */
 
 .fundo-texto-topo:hover {
   transform: scale(1.05);
@@ -354,26 +353,75 @@ h2 {
 /* LINHA DO TEMPO */
 
 .jornada {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   font-size: 50px;
   display: flex;
 }
 
-.jornada h2 {
-  padding-bottom: 50px;
+/* .titulo-h2 {
+  width: 1000px;
+} */
+
+.titulo-h2 h2 {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text-box-linha-do-tempo h3 {
+  font-size: 26px;
+  position: relative;
+}
+
+.text-box-linha-do-tempo {
+  background-color: rgb(59, 59, 59);
+  margin-bottom: 20px;
+  padding: 27px 40px;
+  border-radius: 10px;
+}
+
+.container-linha-do-tempo {
+  margin-left: 60px;
+  position: relative;
+  width: 40%;
+  /* justify-items: center; */
+}
+
+.container-linha-do-tempo-left {
+  left: 0%;
+}
+
+.container-linha-do-tempo-right {
+  left: 50%;
+}
+
+.linha-do-tempo img {
+  background-color: rgb(59, 59, 59);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  right: -85px;
+  z-index: 10;
+}
+
+.container-linha-do-tempo-right img {
+  left: -85px;
 }
 
 .fundo-jornada {
-  width: 587px;
-  height: 700px;
+  width: 1280px;
+  height: 900px;
   border-radius: 10px;
   background-color: rgb(75, 74, 75);
-  text-align: center;
   box-shadow: 0.5px 0.5px 10px 0.5px #000000;
   transition: 0.2s;
-  display: inline-flex;
+  /* display: inline-flex; */
   justify-content: center;
-  margin: 0 25px;
+  /* margin: 0 25px; */
+  margin-top: 100px;
 }
 .white .fundo-jornada {
   box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
