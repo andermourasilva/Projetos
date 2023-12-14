@@ -45,26 +45,18 @@ function escreverIntrodução() {
   const olaMundo = "Olá Mundo!";
   const euSou = "Anderson de Moura Silva...";
   const atualmente = "Desenvolvedor Full Stack.";
-  // const sobreMim =
-  //   "Sou uma mente inquisitiva e autodidata, sempre em busca de ampliar meu repertório para me aprimorar como profissional, seja nos espaços acadêmicos ou nos desafios do cotidiano.";
+
   const interval = 50;
 
   digitacao(elOla, olaMundo, interval);
 
   setTimeout(() => {
-    // elAtualmente.innerHTML = "";
     digitacao(elEuSou, euSou, interval);
   }, olaMundo.length * interval + 200);
 
   setTimeout(() => {
-    // elAtualmente.innerHTML = "";
     digitacao(elAtualmente, atualmente, interval);
   }, olaMundo.length * interval + 2000);
-
-  // setTimeout(() => {
-  //   // elSobreMim.innerHTML = "";
-  //   digitacao(elSobreMim, sobreMim, 40);
-  // }, olaMundo.length * interval + 4000);
 }
 
 function digitacao(el, text, interval) {
@@ -92,17 +84,22 @@ function backTop() {
   });
 }
 
-// EXPANDIR IMAGEM
+// // IR PARA SEÇÃO ALVO
 
-function expandirFoto(element) {
-  element.classList.toggle("expandida");
+function rolarParaSecaoAlvo(id) {
+  var secaoAlvo = document.getElementById(id);
+  secaoAlvo.scrollIntoView({ behavior: "smooth" });
 }
 
-document.addEventListener("click", function (event) {
-  const certificados = document.querySelectorAll(".certificado");
-  certificados.forEach(function (certificado) {
-    if (!certificado.contains(event.target)) {
-      certificado.classList.remove("expandida");
-    }
-  });
-});
+// function rolarParaSecaoTecnologias() {
+//   var secaoAlvo = document.getElementById('secao-alvo');
+//   secaoAlvo.scrollIntoView({ behavior: 'smooth' });
+// }
+// function rolarParaSecaoFormaçãoExperiência() {
+//   var secaoAlvo = document.getElementById('secao-alvo');
+//   secaoAlvo.scrollIntoView({ behavior: 'smooth' });
+// }
+// function rolarParaSecaoProjetos() {
+//   var secaoAlvo = document.getElementById('secao-alvo');
+//   secaoAlvo.scrollIntoView({ behavior: 'smooth' });
+// }

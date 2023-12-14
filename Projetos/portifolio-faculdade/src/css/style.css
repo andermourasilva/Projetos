@@ -19,11 +19,6 @@ body {
   margin: 0 auto;
 }
 
-/* .interface-paralela {
-  max-width: 1280px;
-  margin: 0 auto;
-} */
-
 /* ESTILO CABEÇALHO */
 
 header,
@@ -40,6 +35,9 @@ header {
   height: 70px;
   justify-content: space-between;
   padding: 0 9%;
+  /* position: fixed;
+  z-index: 1000;
+  width: 2100px; */
 }
 
 header nav ul {
@@ -78,8 +76,12 @@ header .btn-contato button:hover {
   color: white;
 }
 
+nav {
+  display: flex;
+}
+
 nav ul {
-  gap: 100px;
+  gap: 150px;
   cursor: pointer;
 }
 
@@ -96,6 +98,23 @@ nav ul {
   width: 45px;
   height: auto;
   margin-right: 10px;
+}
+
+.contatos img {
+  width: 40px;
+  margin-top: 5px;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.contatos img:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+.contatos {
+  margin-right: 110px;
+  display: inline-flex;
 }
 
 /* FLIP */
@@ -297,6 +316,7 @@ section.topo-do-site .flex {
 h2 {
   padding-top: 10px;
   font-size: 50px;
+  text-align: center;
 }
 
 .fundo-tecnologias img {
@@ -354,13 +374,8 @@ h2 {
   display: flex;
 }
 
-.titulo-h2 h2 {
-  padding-bottom: 40px;
-  text-align: center;
-}
-
 .linha-do-tempo {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 40%;
 }
 
@@ -467,26 +482,6 @@ h2 {
   margin: 100px 0px;
 }
 
-.fundo-jornada-certificados h2 {
-  text-align: center;
-}
-
-.white .fundo-jornada-certificados {
-  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  color: rgb(231, 226, 226);
-  background-color: rgb(56, 56, 138);
-}
-
-.fundo-jornada-certificados:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
-.white .fundo-jornada-certificados {
-  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  color: rgb(231, 226, 226);
-}
-
 .white .fundo-jornada {
   box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   color: rgb(231, 226, 226);
@@ -545,28 +540,78 @@ h2 {
   text-align: center;
 }
 
-/* Responsividade */
+.white .fundo-jornada-certificados {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: rgb(231, 226, 226);
+  background-color: rgb(56, 56, 138);
+}
 
-.btn_icon_header {
-  display: none;
-  background-color: transparent;
-  border: none;
-  color: rgb(171, 175, 175);
+.fundo-jornada-certificados:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.white .fundo-jornada-certificados {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: rgb(231, 226, 226);
+}
+
+/* PROJETOS */
+
+.fundo-projetos {
+  width: 1280px;
+  height: 480px;
+  border-radius: 10px;
+  background-color: rgb(75, 74, 75);
+  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
   transition: 0.2s;
+  justify-content: center;
 }
 
-.btn_icon_header:hover {
-  color: #ffffff;
-  transform: scale(1.05);
+.white .fundo-projetos {
+  background-color: rgb(56, 56, 138);
+}
+
+.white .projetos div {
+  background-color: rgb(231, 226, 226);
+}
+
+.projetos div {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(59, 59, 59);
+  margin: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 300px;
 }
 
-/* @media screen and (max-width: 768px) {
-  .btn_icon_header {
-    display: block;
-  }
-  nav ul {
-    position: absolute;
-    flex-direction: column;
-  }
-} */
+.projetos div:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.projetos div .semafaro {
+  width: 90px;
+}
+
+.projetos div a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.white .projetos div a {
+  font-weight: bold;
+  color: #000000;
+}
+
+.projetos {
+  text-align: center;
+}
+
+.img-calculadora-imc {
+  width: 150px;
+}

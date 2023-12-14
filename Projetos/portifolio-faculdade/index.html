@@ -15,19 +15,20 @@
         <p>Anderson de M. Silva</p>
       </div>
       <nav>
+        <div class="contatos">
+          <a href="https://github.com/andermourasilva" target="_blank">
+            <img src="src/img/contatos/github.png" alt="" />
+          </a>
+
+          <a target="_blank" href="https://www.linkedin.com/in/anderson-m-silva/">
+            <img src="src/img/contatos/linkedin.png" alt="" />
+          </a>
+        </div>
         <ul>
-          <li href="#">Técnologias</li>
-          <li href="#">Formação & Experiência</li>
-          <!-- <li href="#">Linha do Tempo</li>
-          <li href="#">Formações</li> -->
-          <li href="#">Projetos</li>
-          <li href="#">
-            <div class="btn-contato">
-              <a href="#">
-                <button>Contato</button>
-              </a>
-            </div>
-          </li>
+          <li onclick="rolarParaSecaoAlvo('tecnologias')" href="#">Técnologias</li>
+          <li onclick="rolarParaSecaoAlvo('formacaoExperiencia')" href="#">Formação & Experiência</li>
+          <li onclick="rolarParaSecaoAlvo('certificados')" href="#">Certificados</li>
+          <li onclick="rolarParaSecaoAlvo('projetos')" href="#">Projetos</li>
           <li>
             <div id="modo" class="flip-modo" onclick="alterarIconeEscuroClaro()">
               <div class="flip-modo-inner">
@@ -62,7 +63,7 @@
         </div>
       </section>
 
-      <section class="tecnologias">
+      <section id="tecnologias" class="tecnologias">
         <div class="interface">
           <div class="fundo-tecnologias">
             <h2>Técnologias</h2>
@@ -110,12 +111,11 @@
         </div>
       </section>
 
-      <section class="jornada">
+      <section id="formacaoExperiencia" class="jornada">
         <div class="interface">
           <div class="fundo-jornada">
-            <div class="titulo-h2">
-              <h2>Formação & Experiência</h2>
-            </div>
+            <h2>Formação & Experiência</h2>
+
             <div class="linha-do-tempo">
               <div class="text-box-linha-do-tempo">
                 <div>
@@ -162,21 +162,65 @@
               </div>
             </div>
           </div>
-          <div class="fundo-jornada-certificados">
-            <h2>Certificados</h2>
-            <div class="certificados">
-              <div class="certificado" onclick="expandirFoto(this)">
-                <img src="src/img/certificados/certificado-etc.jpeg" alt="" />
-                <p class="certicado-etec">Análise Desenvolvimento de Sistemas</p>
-              </div>
-              <div class="certificado" onclick="expandirFoto(this)">
-                <img src="src/img/certificados/certificado-moura.jpeg" alt="" />
-                <p class="certicado-moura">Programação</p>
+
+        </section>
+        
+        <section id="certificados">
+          <div class="interface">
+
+            <div class="fundo-jornada-certificados">
+              <h2>Certificados</h2>
+              <div class="certificados">
+                <div class="certificado" onclick="expandirFoto(this)">
+                  <img src="src/img/certificados/certificado-etc.jpeg" alt="" />
+                  <p class="certicado-etec">Análise Desenvolvimento de Sistemas</p>
+                </div>
+                <div class="certificado" onclick="expandirFoto(this)">
+                  <img src="src/img/certificados/certificado-moura.jpeg" alt="" />
+                  <p class="certicado-moura">Programação</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="projetos">
+        <div class="interface">
+          <div class="fundo-projetos">
+            <h2>Projetos</h2>
+
+            <div class="projetos">
+              <div>
+                <a href="projetos-portifolio-faculdade/01-lampada/projeto-lampada.html" target="_blank">
+                  <img src="src/img/projetos/lampada-acesa-removebg-preview.png" alt="Lampada" />
+                  <p>Lâmpada</p>
+                </a>
+              </div>
+              <div>
+                <a href="projetos-portifolio-faculdade/02-semafaro/projeto-semafaro.html" target="_blank">
+                  <img class="semafaro" src="src/img/projetos/desligado.png" alt="Lampada" />
+                  <p>Semáfaro</p>
+                </a>
+              </div>
+              <div>
+                <a href="projetos-portifolio-faculdade/03-calculadora/projeto-calculadora.html" target="_blank">
+                  <img class="img-calculadora-imc" src="src/img/projetos/calculadora-imc.png" alt="Lampada" />
+                  <p>Calculadora IMC</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="contatos">
+        <div class="interface">
+          <div class="fundo-contatos">
+            <h2>Contatos</h2>
+          </div>
+        </div>
+      </section> -->
     </main>
 
     <article>
