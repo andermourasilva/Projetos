@@ -91,3 +91,18 @@ function backTop() {
     behavior: "smooth",
   });
 }
+
+// EXPANDIR IMAGEM
+
+function expandirFoto(element) {
+  element.classList.toggle("expandida");
+}
+
+document.addEventListener("click", function (event) {
+  const certificados = document.querySelectorAll(".certificado");
+  certificados.forEach(function (certificado) {
+    if (!certificado.contains(event.target)) {
+      certificado.classList.remove("expandida");
+    }
+  });
+});

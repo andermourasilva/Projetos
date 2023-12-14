@@ -67,7 +67,7 @@ header .btn-contato button {
   font-weight: 650;
   background-color: rgb(124, 34, 207);
   cursor: pointer;
-  color: rgb(171, 175, 175);
+  color: rgb(210, 211, 211);
   transition: 0.5s;
 }
 
@@ -146,7 +146,7 @@ nav ul {
 }
 
 .white header {
-  background-color: rgb(43, 42, 43);
+  background-color: rgb(30, 30, 102);
   color: black;
 }
 
@@ -162,15 +162,16 @@ nav ul {
 .white .logo_header {
   display: flex;
   align-items: center;
-  /* color: rgb(171, 175, 175); */
+  color: rgb(171, 175, 175);
   font-weight: bold;
   color: #c4c2c2;
   transition: 0.2s;
 }
 
 .white header .btn-contato button {
-  color: #ffffff;
+  color: #000000;
   transition: 0.5s;
+  background-color: rgb(255, 255, 255);
 }
 
 /* CORPO WHITE */
@@ -216,11 +217,6 @@ section.topo-do-site .flex {
   transition: 0.2s;
 }
 
-/* .sobreMim {
-  padding-top: 10px;
-  width: 692px;
-} */
-
 .fundo-texto-topo:hover {
   transform: scale(1.05);
   transition: 0.3s;
@@ -228,7 +224,7 @@ section.topo-do-site .flex {
 }
 
 .white .fundo-texto-topo {
-  background-color: rgb(100, 100, 104);
+  background-color: rgb(56, 56, 138);
   color: rgb(211, 208, 208);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -293,7 +289,7 @@ section.topo-do-site .flex {
 
 .white .scrollTop:hover {
   transform: scale(1.05);
-  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(56, 56, 138);
 }
 
 /* tecnologias */
@@ -322,13 +318,14 @@ h2 {
 }
 
 .fundo-tecnologias:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
   transition: 0.3s;
 }
 
 .white .fundo-tecnologias {
+  background-color: rgb(56, 56, 138);
   box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  color: rgb(231, 226, 226);
+  color: rgb(255, 255, 255);
 }
 
 .fundo-tecnologias ul {
@@ -353,79 +350,147 @@ h2 {
 /* LINHA DO TEMPO */
 
 .jornada {
-  /* padding-top: 100px; */
   font-size: 50px;
   display: flex;
 }
-
-/* .titulo-h2 {
-  width: 1000px;
-} */
 
 .titulo-h2 h2 {
   padding-bottom: 40px;
   text-align: center;
 }
 
-.text-box-linha-do-tempo h3 {
-  font-size: 26px;
-  position: relative;
+.linha-do-tempo {
+  margin: 0 auto;
+  width: 40%;
 }
 
 .text-box-linha-do-tempo {
-  background-color: rgb(59, 59, 59);
-  margin-bottom: 20px;
-  padding: 27px 40px;
-  border-radius: 10px;
-}
-
-.container-linha-do-tempo {
-  margin-left: 60px;
+  display: flex;
   position: relative;
-  width: 40%;
-  /* justify-items: center; */
+  height: 200px;
 }
 
-.container-linha-do-tempo-left {
-  left: 0%;
+.text-box-linha-do-tempo div {
+  padding: 10px 13px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgb(59, 59, 59);
+  width: 500px;
+  height: 160px;
+  transition: 0.3s;
 }
 
-.container-linha-do-tempo-right {
-  left: 50%;
+.text-box-linha-do-tempo h3 {
+  font-size: 26px;
+}
+
+.text-box-linha-do-tempo:nth-child(odd) {
+  border-left: 3px solid #afadad;
+  padding-left: 50px;
+  transform: translateX(250px);
+}
+
+.text-box-linha-do-tempo:nth-child(even) {
+  border-right: 3px solid #afadad;
+  padding-right: 50px;
+  transform: translateX(-259px);
+}
+
+.text-box-linha-do-tempo:nth-child(odd)::before,
+.text-box-linha-do-tempo:nth-child(even)::before {
+  content: "";
+  background: #afadad;
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-box-linha-do-tempo:nth-child(odd) div::before,
+.text-box-linha-do-tempo:nth-child(even) div::before {
+  content: "";
+  background: #afadad;
+  box-shadow: 0 0 0.5em #596370;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.text-box-linha-do-tempo:nth-child(odd) div::before {
+  left: -0.4em;
+}
+
+.text-box-linha-do-tempo:nth-child(even) div::before {
+  right: -0.4em;
+}
+
+.text-box-linha-do-tempo:nth-child(odd)::before {
+  left: 0;
+}
+
+.text-box-linha-do-tempo:nth-child(even)::before {
+  right: 0;
 }
 
 .linha-do-tempo img {
-  background-color: rgb(59, 59, 59);
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
   max-width: 40px;
   max-height: 40px;
   width: 40px;
   height: 40px;
-  right: -85px;
-  z-index: 10;
-}
-
-.container-linha-do-tempo-right img {
-  left: -85px;
+  margin-left: 380px;
+  margin-top: -150px;
 }
 
 .fundo-jornada {
   width: 1280px;
-  height: 900px;
+  height: 950px;
   border-radius: 10px;
   background-color: rgb(75, 74, 75);
   box-shadow: 0.5px 0.5px 10px 0.5px #000000;
   transition: 0.2s;
-  /* display: inline-flex; */
   justify-content: center;
-  /* margin: 0 25px; */
   margin-top: 100px;
 }
+
+.fundo-jornada-certificados {
+  width: 1280px;
+  height: 540px;
+  border-radius: 10px;
+  background-color: rgb(75, 74, 75);
+  box-shadow: 0.5px 0.5px 10px 0.5px #000000;
+  transition: 0.2s;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.fundo-jornada-certificados h2 {
+  text-align: center;
+}
+
+.white .fundo-jornada-certificados {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: rgb(231, 226, 226);
+  background-color: rgb(56, 56, 138);
+}
+
+.fundo-jornada-certificados:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.white .fundo-jornada-certificados {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: rgb(231, 226, 226);
+}
+
 .white .fundo-jornada {
   box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   color: rgb(231, 226, 226);
+  background-color: rgb(56, 56, 138);
 }
 
 .fundo-jornada:hover {
@@ -438,10 +503,47 @@ h2 {
   color: rgb(231, 226, 226);
 }
 
-/* .historia,
+.white .text-box-linha-do-tempo div {
+  background-color: white;
+  color: #000000;
+}
+/* CERTIFICADOS */
+
+.certificados img:active {
+  transform: scale(1.6);
+  transition: 0.3s;
+  position: fixed;
+}
+
+.certificados img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.certificados div {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  margin: 30px;
+  border: 2px;
+  display: inline-block;
+}
+
 .certificados {
   display: flex;
-} */
+  justify-content: center;
+}
+
+.certificados div:hover {
+  color: #ffffff;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.certificados p {
+  text-align: center;
+}
 
 /* Responsividade */
 
